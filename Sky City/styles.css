@@ -1,0 +1,92 @@
+/* Reset some default styles in browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4A90E2;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Add a cloud and city background */
+.city-with-clouds {
+    background-image: url('images/image_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.background-image {
+    background-image: url('images/image_1.jpg');
+    background-size: cover; /* or you can use "contain" */
+    background-position: center;
+    width: 100%;
+    height: 1200px; /* or whatever height you desire */
+    object-fit: cover; /* or you can use "contain" */
+}
+
+.background-image1 {
+    background-image: url('images/sky_city_ruins.jpg');
+    background-size: cover; /* or you can use "contain" */
+    background-position: center;
+    width: 100%;
+    height: 1200px; /* or whatever height you desire */
+    object-fit: cover; /* or you can use "contain" */
+}
+
+.background-image2 {
+    background-image: url('images/image_2.jpg');
+    background-size: cover; /* or you can use "contain" */
+    background-position: center;
+    width: 100%;
+    height: 1200px; /* or whatever height you desire */
+    object-fit: cover; /* or you can use "contain" */
+}
+
+.background-image3 {
+    background-image: url('images/pool_1.jpg');
+    background-size: cover; /* or you can use "contain" */
+    background-position: center;
+    width: 100%;
+    height: 1200px; /* or whatever height you desire */
+    object-fit: cover; /* or you can use "contain" */
+}
+
+.background-image4 {
+    background-image: url('images/gym_1.jpg');
+    background-size: cover; /* or you can use "contain" */
+    background-position: center;
+    width: 100%;
+    height: 1200px; /* or whatever height you desire */
+    object-fit: cover; /* or you can use "contain" */
+}
+
+/* Style the sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Style the footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #4A90E2;
+    color: white;
+}

@@ -1,0 +1,200 @@
+:root {
+    --primary-green: #4CAF50;
+    --secondary-green-light: #81C784;
+    --secondary-green-dark: #388E3C;
+    --accent-color: #FFC107;
+    --background-color: #F1F1F1;
+    --text-color: #333333;
+    --error-color: #D32F2F;
+}
+@media screen and (max-width: 768px) {
+    /* CSS for devices that have a max width of 768px */
+    body {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.myElement {
+    animation: slideInFromLeft 0.5s ease;
+}
+
+
+/*//////////* Start of the Home Page //////////*/
+
+header {
+    background-color: var(--primary-green);
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Add styles for dark mode */
+[data-theme='dark'] {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+[data-theme='dark'] header, [data-theme='dark'] footer {
+    background: #000000;
+}
+
+/* Style the toggle */
+.dark-mode-toggle {
+    display: inline-block;
+}
+
+#darkModeToggle {
+    display: none;
+}
+
+#darkModeToggle + label {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.dark-mode {
+    --background-color: #333333;
+    --text-color: #ffffff;
+}
+
+button {
+    background-color: var(--secondary-green-light);
+    /* other styles */
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-green-dark);
+    /* other styles */
+}
+
+/* Use accent color for special call-to-action buttons or links */
+.cta-button {
+    background-color: var(--accent-color);
+    /* other styles */
+}
+
+/* Use error color for error messages */
+.error-message {
+    color: var(--error-color);
+    /* other styles */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+    padding: 20px;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Changes color on hover of nav bar */
+nav ul li a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Adds transition to the nav bar */
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Adding a transition */
+}
+
+section {
+    padding: 40px 0;
+}
+section:nth-child(odd) {
+    background-color: var(--secondary-green-light);
+}
+section:nth-child(even) {
+    background-color: #F1F1F1;
+}
+
+/* Nav Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000; /* optional, to ensure the nav stays above other content */
+}
+
+/* Start of Home Page Text Styles */
+/* Home Page Text */
+.hp-text {
+    text-align: center;
+    padding: 0 10px; /* Optional padding */
+}
+
+/* Home Page UL */
+.hp-ul  {
+    text-align: center;
+    list-style-position: inside; /* This makes the bullet points part of the content so they will center with the text */
+    padding-left: 0; /* This removes the default padding */
+}
+
+.hp-h2 {
+    text-align: center;
+}
+
+/* End of Home Page Text Styles */
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #4CAF50; /* Changed to light green */
+    color: #ffffff;
+}
+
+/*//////////* End of the Home Page //////////*/
+/*//////////* Footer Social Media Icons //////////*/
+.fa-icon {
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.fa-icon:hover {
+    color: #007bff;
+}
