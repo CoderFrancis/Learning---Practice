@@ -1,0 +1,43 @@
+:root {
+    --ih-primary-color: #003366; /* Classic Navy Blue */
+    --ih-secondary-color: #800020; /* Burgundy */
+    --ih-accent-color: #228B22; /* Forest Green */
+    --ih-background-color: #FFFFF0; /* Ivory */
+    --ih-text-color: #36454F; /* Charcoal Gray */
+    --ih-highlight-color: #D4AF37; /* Metallic Gold */
+}
+
+                                                /* start of index page */
+
+.ih-index-body {
+    font-family: Arial, sans-serif; /* Or choose another font that suits an academic style */
+    background-color: var(--ih-background-color);
+    color: var(--ih-text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.ih-index-header, .ih-index-footer {
+    background-color: var(--ih-primary-color);
+    color: var(--ih-secondary-color);
+    padding: 1rem;
+}
+
+.ih-index-header h1, .ih-index-header h2, .ih-index-header h3,
+.ih-index-footer h1, .ih-index-footer h2, .ih-index-footer h3 {
+    color: var(--ih-accent-color);
+}
+
+.ih-index-header a, .ih-index-header .button, .ih-index-header .highlight,
+.ih-index-footer a, .ih-index-footer .button, .ih-index-footer .highlight {
+    color: var(--ih-highlight-color);
+}
+
+.ih-index-header a:hover, .ih-index-header .button:hover,
+.ih-index-footer a:hover, .ih-index-footer .button:hover {
+    text-decoration: underline;
+    color: darken(var(--ih-highlight-color), 10%);
+}
+
+                                                /* end of index page */
