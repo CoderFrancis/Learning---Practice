@@ -8,25 +8,41 @@
 }
 
                                                 /* start of index page */
-
-.ih-index-body {
+/* styles the main body, adds in the blue color in the header and footer */
+.ih-index-body { 
     font-family: Arial, sans-serif; /* Or choose another font that suits an academic style */
     background-color: var(--ih-background-color);
     color: var(--ih-text-color);
     line-height: 1.6;
     margin: 0;
     padding: 0;
-}
+} 
 
 .ih-index-header, .ih-index-footer {
     background-color: var(--ih-primary-color);
     color: var(--ih-secondary-color);
     padding: 1rem;
+    text-align: center;
 }
+
+.ih-index-image {
+    width: 100%; /* Make the image responsive: it will take up 100% of its container's width */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 600px; /* Optionally, you can set a max-width to prevent the image from getting too large */
+    display: block; /* Display block to remove any bottom margin/whitespace */
+    margin: 0 auto; /* Center the image within its container */
+}
+
 
 .ih-index-header h1, .ih-index-header h2, .ih-index-header h3,
 .ih-index-footer h1, .ih-index-footer h2, .ih-index-footer h3 {
     color: var(--ih-accent-color);
+}
+
+.ih-index-hero h2, .ih-index-hero p, .ih-index-about h2, .ih-index-about p, .ih-index-news h2, .ih-index-news ul {
+    text-align: center;
+    list-style-type: disc; /* Ensures bullets are visible */
+    list-style-position: inside;
 }
 
 .ih-index-header a, .ih-index-header .button, .ih-index-header .highlight,
@@ -39,5 +55,49 @@
     text-decoration: underline;
     color: darken(var(--ih-highlight-color), 10%);
 }
+/* ends */
+/* styling the nav bar */
+.ih-index-nav {
+    text-align: center;
+    background-color: var(--ih-primary-color); /* Use the primary color */
+}
 
+.ih-index-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.ih-index-nav li {
+    margin: 0 15px;
+}
+
+.ih-index-nav a {
+    text-decoration: none;
+    color: var(--ih-secondary-color);
+}
+
+.ih-index-nav a:hover {
+    color: var(--ih-accent-color);
+}
+/* ends */
+/* sliding animation for the title ih */
+.ih-index-header h1 {
+    text-align: center;
+    animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        margin-left: -100%;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+/* ends */
                                                 /* end of index page */
