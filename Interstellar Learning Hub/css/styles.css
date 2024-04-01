@@ -25,6 +25,7 @@
     text-align: center;
 }
 
+/* the main image on the index page */
 .ih-index-image {
     width: 100%; /* Make the image responsive: it will take up 100% of its container's width */
     height: auto; /* Maintain the aspect ratio */

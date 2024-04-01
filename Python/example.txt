@@ -1,3 +1,6 @@
-Hello, I want to be a software engineer.
-I want to go to space and colonize Mars.
-I want to fly a spaceship and have an AI companion.
+Strong - Leader
+Skinny - Assassin
+Healer - Mage
+Quick - Blades
+Muscles - Broad Sword
+Brains - AI Companion
