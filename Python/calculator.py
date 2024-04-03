@@ -10,15 +10,24 @@
 # 'z:,' adds in a comma to the calculation
 # print(f"{z:,}")
 
-x = float(input("What's x? "))
-y = float(input("What's y? "))
+# x = float(input("What's x? "))
+# y = float(input("What's y? "))
 
 # the ', 2' rounds the solution to the two decimal points
-z = round(x / y, 2)
+# z = round(x / y, 2)
 
 # or 
-z = x / y
+# z = x / y
 
-print(f"{z:.2f}")
+# print(f"{z:.2f}")
 
-# print(z)
+#   print(z)
+
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
+
+def square(n):
+    return pow(n, 2)
+
+main()
